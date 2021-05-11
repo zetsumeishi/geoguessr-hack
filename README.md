@@ -1,5 +1,7 @@
 # Geoguessr Hack
 
+![Geoguessr Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/GeoGuessr_logo.svg/1280px-GeoGuessr_logo.svg.png)
+
 ## Disclaimer
 
 This project is for educational purposes only. I'm not responsible for your actions.
