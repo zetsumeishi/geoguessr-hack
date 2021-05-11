@@ -1,0 +1,539 @@
+{
+    "gameId":"84046d56-7b98-4e91-a467-32152c45a9da",
+    "currentRoundNumber":1,
+    "players":[
+        {
+            "playerId":"559eb848e0280b93bc1e6ada",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":24760,
+                "incomingLevelXp":24050,
+                "incomingNextLevelXp":25850,
+                "incomingLevel":29,
+                "incomingDivision":"Silver",
+                "xp":24760,
+                "bonuses":[
+
+                ],
+                "levelXp":24050,
+                "nextLevelXp":25850,
+                "level":29,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"578350f0813a4f079425b077",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":17256,
+                "incomingLevelXp":16100,
+                "incomingNextLevelXp":17550,
+                "incomingLevel":24,
+                "incomingDivision":"Silver",
+                "xp":17256,
+                "bonuses":[
+
+                ],
+                "levelXp":16100,
+                "nextLevelXp":17550,
+                "level":24,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"5acf6bcf30e0107eb8b3f8c1",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":19232,
+                "incomingLevelXp":19070,
+                "incomingNextLevelXp":20660,
+                "incomingLevel":26,
+                "incomingDivision":"Silver",
+                "xp":19232,
+                "bonuses":[
+
+                ],
+                "levelXp":19070,
+                "nextLevelXp":20660,
+                "level":26,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"5ccde5c16cca6631547989b0",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":22549,
+                "incomingLevelXp":22320,
+                "incomingNextLevelXp":24050,
+                "incomingLevel":28,
+                "incomingDivision":"Silver",
+                "xp":22549,
+                "bonuses":[
+
+                ],
+                "levelXp":22320,
+                "nextLevelXp":24050,
+                "level":28,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"5d71b8d4e9473f81a4b66046",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":49462,
+                "incomingLevelXp":48250,
+                "incomingNextLevelXp":50940,
+                "incomingLevel":40,
+                "incomingDivision":"Gold",
+                "xp":49462,
+                "bonuses":[
+
+                ],
+                "levelXp":48250,
+                "nextLevelXp":50940,
+                "level":40,
+                "division":"Gold"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"5eb787eaeb473f284cde27b7",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":12313,
+                "incomingLevelXp":12170,
+                "incomingNextLevelXp":13410,
+                "incomingLevel":21,
+                "incomingDivision":"Silver",
+                "xp":12313,
+                "bonuses":[
+
+                ],
+                "levelXp":12170,
+                "nextLevelXp":13410,
+                "level":21,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"6016c679fd1936000159d487",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":19673,
+                "incomingLevelXp":19070,
+                "incomingNextLevelXp":20660,
+                "incomingLevel":26,
+                "incomingDivision":"Silver",
+                "xp":19673,
+                "bonuses":[
+
+                ],
+                "levelXp":19070,
+                "nextLevelXp":20660,
+                "level":26,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"60284398747a890001413409",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":9730,
+                "incomingLevelXp":8860,
+                "incomingNextLevelXp":9900,
+                "incomingLevel":18,
+                "incomingDivision":"Silver",
+                "xp":9730,
+                "bonuses":[
+
+                ],
+                "levelXp":8860,
+                "nextLevelXp":9900,
+                "level":18,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"602c61fa425916000153b4ed",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":8747,
+                "incomingLevelXp":7880,
+                "incomingNextLevelXp":8860,
+                "incomingLevel":17,
+                "incomingDivision":"Silver",
+                "xp":8747,
+                "bonuses":[
+
+                ],
+                "levelXp":7880,
+                "nextLevelXp":8860,
+                "level":17,
+                "division":"Silver"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        },
+        {
+            "playerId":"60396528545b6c0001c0bba4",
+            "guesses":[
+
+            ],
+            "countryGuesses":[
+
+            ],
+            "coordinateGuesses":[
+
+            ],
+            "life":3,
+            "knockOutOrdinal":null,
+            "knockedOutAtRound":null,
+            "knockedOutReason":"None",
+            "progress":{
+                "incomingXp":35241,
+                "incomingLevelXp":33850,
+                "incomingNextLevelXp":36050,
+                "incomingLevel":34,
+                "incomingDivision":"Gold",
+                "xp":35241,
+                "bonuses":[
+
+                ],
+                "levelXp":33850,
+                "nextLevelXp":36050,
+                "level":34,
+                "division":"Gold"
+            },
+            "playerState":"Playing",
+            "availablePowerUps":[
+                {
+                    "id":"e9f4db91-fd17-4bbc-9568-4307dd3ab67f",
+                    "type":"FiftyFifty",
+                    "created":"2021-05-10T18:46:22.797255+00:00",
+                    "revealedAt":null,
+                    "appliedAt":null,
+                    "revealedAtRoundNumber":null,
+                    "appliedAtRoundNumber":null,
+                    "revealedInformation":null,
+                    "canBeConsumed":true
+                }
+            ],
+            "consumedPowerUps":[
+
+            ],
+            "earnedLives":[
+
+            ]
+        }
+    ],
+    "rounds":[
+        {
+            "roundNumber":1,
+            "lat":-18.928298950195312,
+            "lng":47.53046417236328,
+            "cutOffLimit":10,
+            "startTime":"2021-05-10T18:46:28.8228635+00:00",
+            "endTime":"2021-05-10T18:47:58.8228635+00:00",
+            "reservationWindowEndsAt":"2021-05-10T18:46:43.8228635+00:00",
+            "panoId":"65506B546C71636E4838625037426250654F5F724167",
+            "answer":null
+        }
+    ],
+    "version":1,
+    "winnerPlayerId":"",
+    "hasGameEnded":false,
+    "initialLives":3,
+    "status":"Ongoing",
+    "isTakingGuessReservations":true,
+    "timestamp":"2021-05-10T18:46:26.5166371+00:00",
+    "isRated":true,
+    "isDistanceGame":false,
+    "guessCooldown":0
+}

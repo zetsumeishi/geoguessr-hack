@@ -1,0 +1,8 @@
+black==21.5b1
+flake8==3.9.2
+geopy==2.1.0
+mitmproxy==6.0.2
+pre-commit==2.12.1
+pur==5.4.0
+pycountry==20.7.3
+us==2.0.2
