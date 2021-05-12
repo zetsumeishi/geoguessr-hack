@@ -15,17 +15,24 @@ def response(flow):
 
     unranked_url = r'https://www.geoguessr.com/api/v3/games/\w{16}'
     ranked_url_pattern = r'^https://game-server.geoguessr.com/api/battle-royale/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/reconnect$'  # NOQA
+    challenges_url_pattern = r'https://www.geoguessr.com/api/v3/challenges/\w{16}'
 
     is_unranked = re.match(unranked_url, flow.request.url) is not None
     is_ranked = re.match(ranked_url_pattern, flow.request.url) is not None
-    if flow.request.method != 'GET' or not is_ranked and not is_unranked:
+    is_challenge = re.match(challenges_url_pattern, flow.request.url) is not None
+    if (
+        flow.request.method != 'GET'
+        or not is_ranked
+        and not is_unranked
+        and not is_challenge
+    ):
         return
 
     # We retrieve the response content in a dict
     response_content = json.loads(flow.response.content.decode())
     geolocator = Nominatim(user_agent='Geoguessr')
     if response_content:
-        if is_unranked:
+        if is_unranked or is_challenge:
             game_mode = response_content['mode']
             streak_type = response_content['streakType']
             round_index = response_content['round'] - 1
@@ -33,7 +40,7 @@ def response(flow):
             latitude = current_round['lat']
             longitude = current_round['lng']
             coordinates = (latitude, longitude)
-            webbrowser.open_new_tab(
+            webbrowser.get(using='google-chrome').open_new_tab(
                 f'https://www.google.com/maps/place/{latitude},{longitude}',
             )
             if game_mode == 'streak':
@@ -52,10 +59,10 @@ def response(flow):
             latitude = current_round['lat']
             longitude = current_round['lng']
             coordinates = (latitude, longitude)
-            webbrowser.get(using='google-chrome').open_new_tab(
-                f'https://www.google.com/maps/place/{latitude},{longitude}',
-            )
             if response_content['isDistanceGame']:
+                # webbrowser.get(using='google-chrome').open_new_tab(
+                #     f'https://www.google.com/maps/place/{latitude},{longitude}',
+                # )
                 location = geolocator.reverse(coordinates, language=LANGUAGE)
                 print(location.address)
             else:
