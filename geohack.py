@@ -13,9 +13,9 @@ LANGUAGE = 'en'
 def response(flow):
     """Called when a server response has been received."""
 
-    unranked_url = r'https://www.geoguessr.com/api/v3/games/\w{16}'
+    unranked_url = r'https://www.geoguessr.com/api/v3/games/\w{16}$'
     ranked_url_pattern = r'^https://game-server.geoguessr.com/api/battle-royale/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/reconnect$'  # NOQA
-    challenges_url_pattern = r'https://www.geoguessr.com/api/v3/challenges/\w{16}'
+    challenges_url_pattern = r'https://www.geoguessr.com/api/v3/challenges/\w{16}$'
 
     is_unranked = re.match(unranked_url, flow.request.url) is not None
     is_ranked = re.match(ranked_url_pattern, flow.request.url) is not None
@@ -60,9 +60,9 @@ def response(flow):
             longitude = current_round['lng']
             coordinates = (latitude, longitude)
             if response_content['isDistanceGame']:
-                # webbrowser.get(using='google-chrome').open_new_tab(
-                #     f'https://www.google.com/maps/place/{latitude},{longitude}',
-                # )
+                webbrowser.get(using='google-chrome').open_new_tab(
+                    f'https://www.google.com/maps/place/{latitude},{longitude}',
+                )
                 location = geolocator.reverse(coordinates, language=LANGUAGE)
                 print(location.address)
             else:
