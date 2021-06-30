@@ -14,7 +14,7 @@ POC of a Geoguessr hack using a MITM proxy. It was made using Python 3.8 and [mi
 
 ### Standard
 
-In **Standard** games, the full address will be printed and it opens in a new browser tab Google Maps at this address.
+In **Standard** games, the full address will be printed and it opens in a new browser tab Google Maps at this address. Same behavior in **Challenges**.
 
 ### Streak
 
