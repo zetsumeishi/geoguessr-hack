@@ -30,6 +30,12 @@ The difference with the other modes, is that you need to refresh the page when a
 The reason for that is that in unranked modes, the position of the current round is sent back by the server automatically when a new round starts.
 When you play in **Battle Royale**, you do not get the location, probably by design. But when you refresh the page, it reconnects you to the game, and sends you the current round. Maybe assuming you got disconnected.
 
+### Competitive City Streaks
+
+In **Competitive City Streaks**, the full address will be printed. Unlike the rest of the game modes, information about the game are transmitted using WebSockets. We constantly receive requests but are interested in just the one received when the new round starts. As of now, it doesn't capture the first round you play.
+
+### Response examples
+
 Samples of the different responses sent back by the servers can be found in the folder `response-samples`.
 
 ## How to
