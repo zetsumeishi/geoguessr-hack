@@ -1,0 +1,25 @@
+{
+  "code": "StreakNewRound",
+  "gameId": "streaks",
+  "playerId": null,
+  "payload": {
+    "round": {
+      "id": 707,
+      "numberOfPlayers": 222,
+      "panoId": "95t38OivAxzD0dkAfYtLMA",
+      "lat": -34.89653,
+      "lng": -56.15985,
+      "locationCode": null,
+      "startedAt": "2021-06-30T18:01:13.1512807Z",
+      "endsAt": "2021-06-30T18:01:58.1512807Z",
+      "nextRoundAt": "2021-06-30T18:02:03.1512807Z"
+    },
+    "timestamp": "2021-06-30T18:01:13.170106Z"
+  },
+  "timestamp": "2021-06-30T18:01:13.1716198Z",
+  "lobby": null,
+  "countryGuess": null,
+  "coordinateGuess": null,
+  "battleRoyaleGameState": null,
+  "battleRoyalePlayer": null
+}

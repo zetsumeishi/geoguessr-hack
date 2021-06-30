@@ -68,3 +68,15 @@ def response(flow):
             else:
                 location = geolocator.reverse(coordinates, language=LANGUAGE)
                 print(location.address)
+
+
+def websocket_message(flow):
+    message = flow.messages[-1]
+    if 'StreakNewRound' in message.content:
+        response = json.loads(message.content)
+        geolocator = Nominatim(user_agent='Geoguessr')
+        latitude = response['payload']['round']['lat']
+        longitude = response['payload']['round']['lng']
+        coordinates = (latitude, longitude)
+        location = geolocator.reverse(coordinates, language=LANGUAGE)
+        print(location.address)
