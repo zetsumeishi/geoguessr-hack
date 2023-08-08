@@ -14,6 +14,7 @@ loop = asyncio.get_event_loop()
 
 adventure_pattern = re.compile(r'^https:\/\/www\.geoguessr\.com\/api\/v4\/adventures\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\/move\/(\d+)')  # NOQA
 standard_pattern = re.compile(r'^https:\/\/www\.geoguessr\.com\/api\/v3\/(games|challenges)\/[A-Za-z0-9]{16}')  # NOQA
+quizz_pattern = re.compile(r'^https:\/\/game-server\.geoguessr\.com\/api\/live-challenge\/[a-f0-9\-]+(\/advance-round)?')  # NOQA
 
 async def display_location(location):
     address = location.raw['address']
@@ -65,26 +66,24 @@ async def response(flow):
                         coordinates = (lat, lng)
                         location = await get_location(coordinates)
                         await display_location(location)
-    if re.match(std_pattern, url) and flow.request.method == 'GET':
-        response_content = json.loads(flow.response.content.decode())
-        lat = response_content['rounds'][-1]['lat']
-        lng = response_content['rounds'][-1]['lng']
-        coordinates = (lat, lng)
-        location = geolocator.reverse(coordinates, language='en', addressdetails=True)
-        display_location(location)
-
-    if re.match(adventure_pattern, url) and flow.request.method == 'POST':
-        match = re.match(adventure_pattern, url)
-        node_id = int(match.group(1))
-        response_content = json.loads(flow.response.content.decode())
-        for level in response_content.get('levels', []):
-            for node in level.get('nodes', []):
-                if node['id'] == node_id and 'game' in node:
-                    lat = node['game']['location']['lat']
-                    lng = node['game']['location']['lng']
+        # Doesn't work with all the question types. More work necessary
+        elif re.match(quizz_pattern, url):
+            response_content = json.loads(flow.response.content.decode())
+            if response_content['rounds']:
+                round_index = response_content['currentRoundNumber'] - 1
+                round = response_content['rounds'][round_index]
+                if round['answer'] and round['answer']['type'] == 'SingleChoice':
+                    payload = round['answer']['singleChoicePayload']
+                    answer_index = payload['correctAlternative']
+                    print(payload['alternatives'][answer_index]['text'])
+                if round['answer'] and round['answer']['type'] == 'SingleChoiceCoordinate':
+                    payload = round['answer']['singleChoiceCoordinatePayload']
+                    answer_index = payload['correctAlternative']
+                    lat = payload['alternatives'][answer_index]['coordinate']['lat']
+                    lng = payload['alternatives'][answer_index]['coordinate']['lng']
                     coordinates = (lat, lng)
-                    location = geolocator.reverse(coordinates, language='en', addressdetails=True)
-                    display_location(location)
+                    location = await get_location(coordinates)
+                    await display_location(location)
 
 async def websocket_message(flow):
     message = flow.websocket.messages[-1]
